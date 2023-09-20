@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 2.5%;
+}
+
+.header {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.header .nav-links a {
+    font-size: 20px;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+.inicio {
+    background-color: #3f3e3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2.5% 2.5%;
+}
+
+.inicio h1 {
+    color: white;
+}
+
+.inicio h2 {
+    color: rgb(120, 108, 196)
+}
+
+.inicio .foto {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.projectos {
+    background-color: #3f3e3e;
+    padding: 2.5% 2.5%;
+}
+
+.sobre-mi {
+    padding: 2.5% 2.5%;
+}
+
+.sobre-mi .info {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5% 2.5%;
+}
+
+.sobre-mi .info div {
+    width: 50%;
+    height: auto;
+    padding: 3%;
+}
+
+
+.contacto {
+    padding: 2.5% 2.5%;
+}
