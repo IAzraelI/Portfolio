@@ -8,6 +8,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
+  max-width: 1800px;
+}
+
+.frontpage_content--data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .frontpage_content--mainimage {
@@ -18,6 +27,7 @@
 .frontpage_content h2 {
   margin-top: 20px;
   color: var(--light-text);
+  text-align: center;
 }
 
 .frontpage_content h4 {
@@ -25,6 +35,7 @@
   font-size: 18px;
   font-weight: 500;
   color: var(--secondary-color);
+  text-align: center;
 }
 
 .frontpage_contact {
@@ -53,4 +64,40 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .frontpage {
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    height: auto;
+  }
+  .frontpage_content {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .frontpage_content--mainimage {
+    width: 550px;
+  }
+
+  .frontpage_content h2 {
+    font-size: 48px;
+  }
+
+  .frontpage_content h4 {
+    font-size: 32px;
+  }
+
+  .frontpage_contact--link {
+    width: 65px;
+    height: 65px;
+  }
+
+  .frontpage_contact--cv {
+    height: 65px;
+    font-size: 28px;
+  }
 }
