@@ -1,5 +1,6 @@
 @import url(./variables.css);
 @import url(./frontpage.css);
+@import url(./aboutme.css);
 
 * {
   box-sizing: border-box;
