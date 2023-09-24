@@ -1,0 +1,69 @@
+.proyects {
+  color: var(--light-text);
+}
+
+.proyects_items {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px 0px;
+}
+
+.proyects_item {
+  justify-self: center;
+  background-color: #eaeaea;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 20px 30px 30px 25px;
+  margin: 0px 20px;
+  color: #000000;
+}
+
+.proyects_item > h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.proyects_item--description {
+  text-align: center;
+}
+
+.proyects_item--info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.proyects_item--techs h4 {
+  color: #3440b4;
+  margin-top: 25px;
+}
+
+.proyects_item--techs-list {
+  width: 200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 0px;
+}
+
+.proyects_item--techs-list div {
+  justify-self: center;
+  background: blue;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.proyects_item--links {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.proyects_item--links a {
+  text-decoration: none;
+  color: #3440b4;
+  cursor: pointer;
+}
