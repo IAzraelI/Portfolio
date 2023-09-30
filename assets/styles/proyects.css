@@ -77,17 +77,24 @@
   .proyects_item {
     max-width: 900px;
     width: 100%;
-    height: fit-content;
   }
 
   .proyects_item--content {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    height: 100%;
   }
 
   .proyects_item > h4 {
     font-size: 32px;
+  }
+
+  .proyects_item--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
   }
 
   .proyects_item--description {

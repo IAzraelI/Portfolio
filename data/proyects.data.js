@@ -13,7 +13,7 @@ const proyect_002 = {
     "Este proyecto es una aplicacion de notas, tiene autenticacion, validaciones por roles, etc etc etc ",
   github: "http://www.google.com",
   temp: "http://www.google.com",
-  techs: ["HTML", "django", "SQL", "Git"],
+  techs: [ "HTML", "django", "SQL", "Git","HTML", "django", "SQL", "Git","HTML", "django", "SQL", "Git"],
 };
 
 const proyectList = [proyect_001, proyect_002, proyect_002, proyect_001];
