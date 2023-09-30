@@ -1,6 +1,6 @@
 const proyectRoot = document.getElementById("proyects_items_root");
 
-proyectList.forEach((element) => {
+proyectList.forEach((element, index) => {
   const techsIcons = element.techs
     .map((tech) => {
       return `<img src="${mapTechs(tech)}" alt="${tech}">`;
@@ -22,7 +22,11 @@ proyectList.forEach((element) => {
                 </div>
               </div>
               <div class="proyects_item--links">
-                <a href="${element.temp}">Ver mas</a>
+                <a name="proyect_link"
+                  data-id="${index}"
+                  href="./pages/proyect.html">
+                  Ver mas
+                </a>
                 <a href="${element.github}">Ver codigo</a>
               </div>
             </div>
