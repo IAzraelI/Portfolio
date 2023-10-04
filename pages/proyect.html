@@ -3,10 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../assets/styles/proyectPage/proyectPage.css"
+    />
+    <title>Titulo 001</title>
   </head>
   <body>
-    <a href="../index.html#proyects">Home</a>
+    <header>
+      <a href="../index.html"
+        ><img src="../assets/icons/back_arrow.svg" alt="back arrow" /> Inicio</a
+      >
+    </header>
+
+    <section class="section abstract">
+      <div class="abstract__header">
+        <h1>Proyecto 001</h1>
+        <span>17/10/1997</span>
+      </div>
+
+      <div class="abstract__content">
+        <p class="abstract__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
+          inventore ducimus ullam aliquid aliquam repudiandae. inventore ducimus
+          ullam aliquid aliquam repudiandae. inventore ducimus ullam aliquid
+          aliquam repudiandae. inventore ducimus ullam aliquid aliquam
+          repudiandae.
+        </p>
+
+        <div class="abstract__techs">
+          <h4>Tecnologias usadas</h4>
+          <div class="abstract__techs--list">
+            <img src="../assets/icons/django.svg" alt="jago" />
+            <img src="../assets/icons/django.svg" alt="jago" />
+            <img src="../assets/icons/django.svg" alt="jago" />
+            <img src="../assets/icons/django.svg" alt="jago" />
+            <img src="../assets/icons/django.svg" alt="jago" />
+            <img src="../assets/icons/django.svg" alt="jago" />
+            <img src="../assets/icons/django.svg" alt="jago" />
+            <img src="../assets/icons/django.svg" alt="jago" />
+          </div>
+        </div>
+
+        <div class="abstract__links">
+          <a href="${element.github}">Ver codigo en gitHub</a>
+        </div>
+      </div>
+    </section>
+
     <script src="../data/proyects.data.js"></script>
     <script
       src="../assets/javascripts/proyectsPage/proyectsPage.js"
