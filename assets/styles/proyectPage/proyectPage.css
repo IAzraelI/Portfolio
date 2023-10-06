@@ -39,3 +39,10 @@ header a {
   margin-bottom: 35px;
   font-weight: 500;
 }
+
+@media (min-width: 1000px) {
+  header a {
+    width: 800px;
+    margin: auto;
+  }
+}

@@ -19,7 +19,7 @@
 
 .abstract__header span {
   font-size: 0.9rem;
-  color: grey;
+  color: var(--proyect-tertiary-color);
 }
 
 .abstract__content {
@@ -57,10 +57,35 @@
 }
 
 .abstract__links {
-  margin-top: 15px;
+  margin-top: 55px;
+  text-align: center;
 }
 
 .abstract__links a {
   color: var(--proyect-secondary-color);
   text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .abstract__content {
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .abstract__description {
+    /*max-width: 500px;*/
+  }
+
+  .abstract__techs {
+    max-width: 250px;
+  }
+
+  .abstract__techs h4 {
+    max-width: 500px;
+  }
+
+  .abstract__techs--list {
+    max-width: 500px;
+  }
 }
