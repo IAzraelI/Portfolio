@@ -22,11 +22,14 @@ proyectList.forEach((element, index) => {
                 </div>
               </div>
               <div class="proyects_item--links">
+              ${ element.showPage ? `
                 <a name="proyect_link"
                   data-id="${index}"
-                  href="./pages/proyect.html">
+                  href="./proyect.html">
                   Ver mas
                 </a>
+              ` : ""
+              }
                 <a href="${element.github}">Ver codigo</a>
               </div>
             </div>
