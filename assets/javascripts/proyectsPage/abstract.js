@@ -1,7 +1,3 @@
-const abstract = document.getElementById("abstract");
-const proyectID = localStorage.getItem("proyect_id") || 0;
-const project = proyectList[proyectID];
-
 const techsIcons = project.techs
   .map((tech) => {
     return `<img src="${mapTechs(tech)}" alt="${tech}">`;

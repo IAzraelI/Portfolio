@@ -1,5 +1,6 @@
 @import url(../variables.css);
 @import url(./abstract.css);
+@import url(./information.css);
 
 * {
   box-sizing: border-box;
