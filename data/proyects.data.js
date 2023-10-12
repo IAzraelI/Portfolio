@@ -76,6 +76,7 @@ const proyect_002 = {
           vertical: true,
           image: {
             url: "./assets/images/ejemplo2.webp",
+            width: "600px"
           },
           description: {
             content:

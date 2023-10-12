@@ -1,22 +1,33 @@
+const generate_images = (elem) => {
+  if (!elem.image) return "";
+
+  let img = "";
+  const width = elem.image.width;
+  const heigth = elem.image.height;
+  const url = elem.image.url;
+
+  img = `<img src="${url}" width="${width || "auto"}" height="${
+    heigth || "auto"
+  }"/>`;
+  return img;
+};
+
 const generate_content = (elem) => {
   let ret = ``;
   elem.content.forEach((element) => {
+    const content = element.description?.content;
     ret += `
-        <div class="information_content ${element.vertical && "vertical"}">
+        <div class="information_content ${element.vertical ? "vertical" : ""}">
         ${
           element.image?.position == 1
-            ? `<img src="${element.image?.url}"/> <p>${element.description?.content || ""} </p>`
-            : `<p>${element.description?.content || ""}</p>  ${element.image?.url ? `<img src="${element.image?.url}"/>` : ""}`
+            ? `${generate_images(element)} <p>${content || ""} </p>`
+            : `<p>${content || ""}</p>  ${generate_images(element)}`
         }
         </div>
     `;
   });
   return ret;
 };
-
-//TODO a las imagenes agregarpes el parametro de with y heigth
-//TODO en el navigation manejar para que al hacer bakc en un project scrollee hasta ahi
-//TODO agregar el footer
 
 if (project.extra_information) {
   project.extra_information.forEach((elem, index, arr) => {
