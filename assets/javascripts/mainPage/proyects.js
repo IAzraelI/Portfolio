@@ -1,5 +1,15 @@
 const proyectRoot = document.getElementById("proyects_items_root");
 
+if (proyectList.length == 0) {
+  const emptyProyects = `
+  <div class="empty">
+    <p> No hay informacion cargada </p>
+    <p>Revisar la rama "Ejemplo" en github</p>
+  </div>
+  `;
+  proyectRoot.innerHTML += emptyProyects;
+}
+
 proyectList.forEach((element, index) => {
   const techsIcons = element.techs
     .map((tech) => {
