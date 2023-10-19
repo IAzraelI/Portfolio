@@ -1,0 +1,87 @@
+.abstract {
+  margin-top: 60px;
+  background-color: var(--proyect-bg);
+}
+
+.abstract__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.abstract__header h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.abstract__header span {
+  font-size: 0.9rem;
+  color: var(--proyect-tertiary-color);
+}
+
+.abstract__content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.abstract__description {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.abstract__techs {
+  width: 100%;
+}
+
+.abstract__techs h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.abstract__techs--list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 0px;
+}
+
+.abstract__techs--list img {
+  justify-self: center;
+  height: 40px;
+  width: 40px;
+}
+
+.abstract__links {
+  margin-top: 55px;
+  text-align: center;
+}
+
+.abstract__links a {
+  color: var(--proyect-secondary-color);
+  text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .abstract__content {
+    flex-direction: row;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .abstract__techs {
+    max-width: 250px;
+  }
+
+  .abstract__techs h4 {
+    max-width: 500px;
+  }
+
+  .abstract__techs--list {
+    max-width: 500px;
+  }
+}
