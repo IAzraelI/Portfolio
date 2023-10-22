@@ -1,2 +1,1 @@
-const aboutMeList = [
-];
+const aboutMeList = [];

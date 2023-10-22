@@ -69,13 +69,13 @@
 
 @media (min-width: 1000px) {
   .proyects_items {
-    max-width: 1500px;
+    max-width: 1000px;
     grid-template-columns: repeat(2, minmax(350px, 1fr));
     gap: 40px;
   }
 
   .proyects_item {
-    max-width: 900px;
+    max-width: 500px;
     width: 100%;
   }
 
@@ -87,7 +87,7 @@
   }
 
   .proyects_item > h4 {
-    font-size: 32px;
+    font-size: 1.2rem;
   }
 
   .proyects_item--info {
@@ -98,26 +98,11 @@
   }
 
   .proyects_item--description {
-    font-size: 28px;
-    padding-top: 35px;
+    padding-top: 15px;
     max-width: 400px;
   }
 
   .proyects_item--techs h4 {
-    font-size: 32px;
-  }
-
-  .proyects_item--techs-list {
-    width: 300px;
-    gap: 30px 0px;
-  }
-
-  .proyects_item--techs-list img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .proyects_item--links a {
-    font-size: 28px;
+    margin-top: 5px;
   }
 }
